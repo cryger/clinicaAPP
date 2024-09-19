@@ -9,6 +9,9 @@ Este proyecto es un **Sistema de Gestión de Clínica** desarrollado en C# con u
 ## Características
 
 - **Gestión de pacientes**: Registrar, consultar, actualizar y eliminar pacientes.
+  ![Patients View](patients_view.png)
+
+  ![Patients Data View](patients_view_data.png)
 - **Gestión de médicos**: Administrar el personal médico de la clínica.
 - **Gestión de citas**: Programar, modificar y eliminar citas médicas.
 - **Gestión de tratamientos**: Control y seguimiento de los tratamientos para cada paciente.
