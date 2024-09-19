@@ -16,7 +16,7 @@ namespace ClinicaAPP
         public tratamiento()
         {
             InitializeComponent();
-            CargarNombresMedicos();
+            CargarIformacionTratamientos();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace ClinicaAPP
         }
 
         // Método para cargar los nombres de los médicos en el ComboBox
-        private void CargarNombresMedicos()
+        private void CargarIformacionTratamientos()
         {
             Database db = new Database();
             db.OpenConnection();
