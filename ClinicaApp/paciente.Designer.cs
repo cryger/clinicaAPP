@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             label1 = new Label();
             label3 = new Label();
             label4 = new Label();
@@ -48,6 +48,8 @@
             txtTelefono = new TextBox();
             txtIdentificacion = new TextBox();
             label2 = new Label();
+            label8 = new Label();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewPacientes).BeginInit();
             SuspendLayout();
             // 
@@ -129,7 +131,7 @@
             // button1
             // 
             button1.BackColor = Color.FromArgb(128, 255, 128);
-            button1.Location = new Point(228, 272);
+            button1.Location = new Point(133, 272);
             button1.Name = "button1";
             button1.Size = new Size(140, 29);
             button1.TabIndex = 12;
@@ -140,7 +142,7 @@
             // button2
             // 
             button2.BackColor = Color.FromArgb(255, 192, 128);
-            button2.Location = new Point(424, 272);
+            button2.Location = new Point(329, 272);
             button2.Name = "button2";
             button2.Size = new Size(140, 29);
             button2.TabIndex = 13;
@@ -151,7 +153,7 @@
             // button3
             // 
             button3.BackColor = Color.FromArgb(255, 128, 128);
-            button3.Location = new Point(629, 272);
+            button3.Location = new Point(534, 272);
             button3.Name = "button3";
             button3.Size = new Size(140, 29);
             button3.TabIndex = 14;
@@ -162,7 +164,7 @@
             // button4
             // 
             button4.BackColor = Color.FromArgb(128, 255, 255);
-            button4.Location = new Point(849, 272);
+            button4.Location = new Point(739, 272);
             button4.Name = "button4";
             button4.Size = new Size(140, 29);
             button4.TabIndex = 15;
@@ -176,14 +178,14 @@
             dataGridViewPacientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewPacientes.Location = new Point(48, 341);
             dataGridViewPacientes.Name = "dataGridViewPacientes";
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridViewPacientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataGridViewPacientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dataGridViewPacientes.RowHeadersWidth = 51;
             dataGridViewPacientes.RowTemplate.Height = 29;
             dataGridViewPacientes.Size = new Size(1099, 215);
@@ -229,12 +231,35 @@
             label2.TabIndex = 20;
             label2.Text = "Identificacion:";
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(1022, 564);
+            label8.Name = "label8";
+            label8.Size = new Size(125, 26);
+            label8.TabIndex = 22;
+            label8.Text = "Version 1.0";
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.FromArgb(255, 128, 0);
+            button5.Location = new Point(940, 272);
+            button5.Name = "button5";
+            button5.Size = new Size(140, 29);
+            button5.TabIndex = 23;
+            button5.Text = "Regresar al Menu";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
+            // 
             // paciente
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 242, 254);
-            ClientSize = new Size(1179, 568);
+            ClientSize = new Size(1179, 599);
+            Controls.Add(button5);
+            Controls.Add(label8);
             Controls.Add(txtIdentificacion);
             Controls.Add(label2);
             Controls.Add(txtTelefono);
@@ -283,5 +308,7 @@
         private TextBox txtTelefono;
         private TextBox txtIdentificacion;
         private Label label2;
+        private Label label8;
+        private Button button5;
     }
 }

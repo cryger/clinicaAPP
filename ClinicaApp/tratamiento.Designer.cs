@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             txtIdTratamiento = new TextBox();
             label2 = new Label();
             txtCosto = new TextBox();
@@ -43,6 +43,7 @@
             label3 = new Label();
             cbIdCita = new ComboBox();
             label4 = new Label();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewTratamientos).BeginInit();
             SuspendLayout();
             // 
@@ -75,14 +76,14 @@
             dataGridViewTratamientos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewTratamientos.Location = new Point(31, 290);
             dataGridViewTratamientos.Name = "dataGridViewTratamientos";
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridViewTratamientos.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataGridViewTratamientos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dataGridViewTratamientos.RowHeadersWidth = 51;
             dataGridViewTratamientos.RowTemplate.Height = 29;
             dataGridViewTratamientos.Size = new Size(1099, 207);
@@ -92,7 +93,7 @@
             // button4
             // 
             button4.BackColor = Color.FromArgb(128, 255, 255);
-            button4.Location = new Point(858, 232);
+            button4.Location = new Point(757, 242);
             button4.Name = "button4";
             button4.Size = new Size(140, 29);
             button4.TabIndex = 50;
@@ -103,7 +104,7 @@
             // button3
             // 
             button3.BackColor = Color.FromArgb(255, 128, 128);
-            button3.Location = new Point(638, 232);
+            button3.Location = new Point(548, 242);
             button3.Name = "button3";
             button3.Size = new Size(140, 29);
             button3.TabIndex = 49;
@@ -114,7 +115,7 @@
             // button2
             // 
             button2.BackColor = Color.FromArgb(255, 192, 128);
-            button2.Location = new Point(433, 232);
+            button2.Location = new Point(343, 242);
             button2.Name = "button2";
             button2.Size = new Size(140, 29);
             button2.TabIndex = 48;
@@ -125,7 +126,7 @@
             // button1
             // 
             button1.BackColor = Color.FromArgb(128, 255, 128);
-            button1.Location = new Point(237, 232);
+            button1.Location = new Point(147, 242);
             button1.Name = "button1";
             button1.Size = new Size(140, 29);
             button1.TabIndex = 47;
@@ -186,12 +187,24 @@
             label4.TabIndex = 58;
             label4.Text = "Version 1.0";
             // 
+            // button5
+            // 
+            button5.BackColor = Color.FromArgb(255, 128, 0);
+            button5.Location = new Point(953, 242);
+            button5.Name = "button5";
+            button5.Size = new Size(140, 29);
+            button5.TabIndex = 59;
+            button5.Text = "Regresar al Menu";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
+            // 
             // tratamiento
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 242, 254);
             ClientSize = new Size(1160, 543);
+            Controls.Add(button5);
             Controls.Add(label4);
             Controls.Add(cbIdCita);
             Controls.Add(label3);
@@ -230,5 +243,6 @@
         private Label label3;
         private ComboBox cbIdCita;
         private Label label4;
+        private Button button5;
     }
 }

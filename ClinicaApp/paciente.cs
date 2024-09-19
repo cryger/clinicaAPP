@@ -278,5 +278,12 @@ namespace ClinicaAPP
                 }
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Principal menu = new Principal();
+            menu.Show();
+        }
     }
 }

@@ -45,6 +45,7 @@
             label4 = new Label();
             label1 = new Label();
             label3 = new Label();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMedicos).BeginInit();
             SuspendLayout();
             // 
@@ -103,7 +104,7 @@
             // btnConsulta
             // 
             btnConsulta.BackColor = Color.FromArgb(128, 255, 255);
-            btnConsulta.Location = new Point(870, 190);
+            btnConsulta.Location = new Point(745, 205);
             btnConsulta.Name = "btnConsulta";
             btnConsulta.Size = new Size(140, 29);
             btnConsulta.TabIndex = 34;
@@ -114,7 +115,7 @@
             // btnEliminar
             // 
             btnEliminar.BackColor = Color.FromArgb(255, 128, 128);
-            btnEliminar.Location = new Point(650, 190);
+            btnEliminar.Location = new Point(525, 205);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(140, 29);
             btnEliminar.TabIndex = 33;
@@ -125,7 +126,7 @@
             // btnActualizar
             // 
             btnActualizar.BackColor = Color.FromArgb(255, 192, 128);
-            btnActualizar.Location = new Point(445, 190);
+            btnActualizar.Location = new Point(320, 205);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(140, 29);
             btnActualizar.TabIndex = 32;
@@ -136,7 +137,7 @@
             // btnAgregar
             // 
             btnAgregar.BackColor = Color.FromArgb(128, 255, 128);
-            btnAgregar.Location = new Point(249, 190);
+            btnAgregar.Location = new Point(124, 205);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(140, 29);
             btnAgregar.TabIndex = 31;
@@ -204,12 +205,24 @@
             label3.TabIndex = 41;
             label3.Text = "Version 1.0";
             // 
+            // button5
+            // 
+            button5.BackColor = Color.FromArgb(255, 128, 0);
+            button5.Location = new Point(959, 205);
+            button5.Name = "button5";
+            button5.Size = new Size(140, 29);
+            button5.TabIndex = 42;
+            button5.Text = "Regresar al Menu";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
+            // 
             // medico
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 242, 254);
             ClientSize = new Size(1211, 600);
+            Controls.Add(button5);
             Controls.Add(label3);
             Controls.Add(txtIdentificacion);
             Controls.Add(label2);
@@ -251,5 +264,6 @@
         private Label label4;
         private Label label1;
         private Label label3;
+        private Button button5;
     }
 }

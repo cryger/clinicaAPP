@@ -242,8 +242,15 @@ namespace ClinicaAPP
 
                 cbIdCita.Text = row.Cells["id_cita"].Value.ToString(); // Sexo
                 txtCosto.Text = row.Cells["costo"].Value.ToString(); // Teléfono
-                
+
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Principal menu = new Principal();
+            menu.Show();
         }
     }
 }
