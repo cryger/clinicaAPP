@@ -13,6 +13,7 @@ Este proyecto es un **Sistema de Gestión de Clínica** desarrollado en C# con u
 - **Gestión de citas**: Programar, modificar y eliminar citas médicas.
 - **Gestión de tratamientos**: Control y seguimiento de los tratamientos para cada paciente.
 - **Interfaz gráfica intuitiva**: Interacción sencilla con el sistema mediante formularios Windows Forms.
+  ![Dashboard View](dashboard_view.png)
 - **Conexión con base de datos MySQL**: Los datos se almacenan de forma segura en una base de datos MySQL.
 
 ## Tecnologías utilizadas
