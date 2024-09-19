@@ -1,5 +1,6 @@
 # Sistema de Gestión de Clínica
-##Desarrollado por: Henry Garcia
+## Desarrollado por: Henry Garcia
+
 Este proyecto es un **Sistema de Gestión de Clínica** desarrollado en C# con una interfaz gráfica (GUI) utilizando Windows Forms, y MySQL como base de datos. El sistema permite gestionar pacientes, médicos, citas y tratamientos mediante operaciones CRUD (Crear, Leer, Actualizar y Eliminar).
 
 ## Características
